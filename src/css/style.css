@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    color: #fff;
+    background: #000;
+}
+
+.nave{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #ece8e8;
+    width: 100%;
+    transition: all 0.5s;
+    background: #0a0a0a;
+    color: #dcd9d9;
+    position: fixed;
+}
+
+.nave .logo{
+    color: #f37335;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.logo span{
+    color: #fff;
+}
+.menu-buscar{
+    width: 200px;
+    height: 25px;
+    margin-top: 0.3rem;
+    background-color:  #f37335;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer;
+    color: #f6f3f3;
+    transition: all 200ms ease-in;
+}
+
+.menu-buscar:hover {
+    background-color: #f5f3f3;
+    color: #0c0b0b;
+}
+
+.menu-buscar i{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.nave ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.nave ul li a{
+    color: #fbfbfb;
+    font-size: 17px;
+    font-weight: 600;
+    transition: all 0.5rem;
+}
+.nave ul li a:hover{
+    color: #f37335;
+}
+
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu .bara{
+    display: block;
+    width: 27px;
+    height: 3px;
+    border-radius: 3px;
+    background: #fff;
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+.menu .bara:nth-child(1),
+.menu .bara:nth-child(3){
+    background: #f37335;
+}
+
+.ho{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0px 10%;
+}
+
+.ho-ter{
+    max-width: 36rem;
+}
+
+.ho-ter .tex-h4{
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.ho-ter .tex-h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+    color: #f37335;
+}
+
+.ho p{
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.ho-btn{
+    padding: 15px 45px;
+    background: #f37335;
+    color: #fbf9f9;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.ho-btn a{
+    color: #000;
+}
+
+.ho-btn:hover{
+    background: #f3f3f3;
+}
+
+.nave-item{
+    margin: 16px 0;
+}
+
+.ho{
+    padding: 100px 2%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    gap: 5rem;
+}
+
+.ho .tex-h4{
+    font-size: 15px;
+}
+
+.ho .tex-h1{
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+.ho p{
+    font-size: 15px;
+}
+
+main{
+    width: 1200;
+    height: 400px;
+}
+/* Cardápios */
+
+.Cardápios {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f37335;
+}
+
+.Cardápios h2 span{
+    font-size: 3rem;
+    color: #100f0f;
+    text-transform: uppercase;
+}
+
+.Cardápios .itens-Cardápios h1{
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #100f0f;
+    text-transform: uppercase;
+}
+
+.itens-Cardápios {
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.itens-Cardápios .info {
+    background-color: #363131a3;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;   
+}
+
+.itens-Cardápios .info h3 {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.itens-Cardápios .info p{
+    font-size: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.itens-Cardápios .info h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    display: grid;
+    margin: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100px 100px;
+    margin-left: 6rem;
+    color: #fefcfb;
+    justify-items: start;
+}
+
+.info span {
+    width: 6px;
+    height: 8px;
+    color: #000;
+}
+
+.itens-Cardápios .info li span {
+    font-size: 1rem;
+    color: #060606;
+}
+
+.itens-Cardápios img {
+    width: 300px;
+    height: 300px;
+    padding: 30px 20px;
+    display: flex;
+    margin: 10%; 
+    align-items: baseline;
+    justify-content: center;
+}
+
+.itens-Cardápios .info .pedir {
+    width: 200px;
+    height: 35px;
+    margin-top: 0.5rem;
+    background-color:  #f37335;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer;
+    color: #090909;
+    transition: all 200ms ease-in;
+}
+
+.itens-Cardápios .info .pedir:hover {
+    background-color: #070707;
+    color: #fbfafa;
+}
+
+
+/* contatos */
+
+.contatos {
+    width: 100%;
+    background-color: #0b0b0b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: #fdfdfd;
+    padding-bottom: 4rem;
+}
+
+.contatos h3 span{
+    color: #f37335;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.contatos-icones {
+    width: 650px;
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.contatos-icones a i {
+    padding: 10px;
+    width: 5px;
+    height: 6px;
+}
+
+.contatos-icones .icon i {
+    color:  #f37335;
+}
+
+footer {
+    height: 25px;
+    background-color: black;
+    color:  #faf9f8;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
